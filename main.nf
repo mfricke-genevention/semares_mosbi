@@ -2,17 +2,16 @@ params.output = "./output/"
 params.algorithm = "base" //"extra" or "all"
 params.min_size = 20
 params.timepoint = ""
-params.protein_mapping = "" 
 params.meta_file = "./example/metadata.json"
 params.count_files = "./example/data/1/quantification_table.tsv,./example/data/2/quantification_table.tsv,./example/data/3/quantification_table.tsv,./example/data/4/quantification_table.tsv,./example/data/5/quantification_table.tsv,./example/data/6/quantification_table.tsv,./example/data/7/quantification_table.tsv,./example/data/8/quantification_table.tsv,./example/data/10/quantification_table.tsv"
 
-protein_mapping = Channel.fromPath(params.protein_mapping)
 metadata = Channel.fromPath(params.meta_file)
 file_list = params.count_files.tokenize(",")
 file_channels = Channel.fromPath(file_list).collect()
 
 // scripts
 mosbi_script = Channel.fromPath("${projectDir}/univeral_mosbi/universal.r")
+protein_mapping = Channel.fromPath("${projectDir}/geneprot_mapping.csv")
 join_table = Channel.fromPath("${projectDir}/semares_preprocessing/join_table.py")
 metadata2table = Channel.fromPath("${projectDir}/semares_preprocessing/metadata2table.py")
 

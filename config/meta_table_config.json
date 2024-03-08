@@ -1,0 +1,43 @@
+{
+    "file_name": "metadata.tsv",
+    "sep": "\t",
+    "quotechar": "",
+    "output": "./output/",
+    "columns": [
+        {
+            "field": [
+                "name"
+            ],
+            "object_type": "sample",
+            "header_name": "Column"
+        },
+        {
+            "field": [],
+            "object_type": "",
+            "header_name": "Batch"
+        },
+        {
+            "field": [
+                "identifier"
+            ],
+            "object_type": "individual",
+            "header_name": "Animal"
+        },
+        {
+            "field": [
+                "timepoints",
+                "$TIMEPOINT",
+                "timepoint_code"
+            ],
+            "object_type": "individual",
+            "header_name": "Timepoint"
+        },
+        {
+            "field": [
+                "strain"
+            ],
+            "object_type": "individual",
+            "header_name": "Group"
+        }
+    ]
+}

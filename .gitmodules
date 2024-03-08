@@ -1,0 +1,6 @@
+[submodule "semares_preprocessing"]
+	path = semares_preprocessing
+	url = https://github.com/mfricke-genevention/semares_preprocessing
+[submodule "universal_mosbi"]
+	path = universal_mosbi
+	url = https://github.com/ausdrehBio/universal_mosbi

@@ -10,7 +10,7 @@ file_list = params.count_files.tokenize(",")
 file_channels = Channel.fromPath(file_list).collect()
 
 // scripts
-mosbi_script = Channel.fromPath("${projectDir}/univeral_mosbi/universal.r")
+mosbi_script = Channel.fromPath("${projectDir}/universal_mosbi/universal.r")
 protein_mapping = Channel.fromPath("${projectDir}/geneprot_mapping.csv")
 join_table = Channel.fromPath("${projectDir}/semares_preprocessing/join_table.py")
 metadata2table = Channel.fromPath("${projectDir}/semares_preprocessing/metadata2table.py")

@@ -58,7 +58,6 @@ process metadata_join {
 
 process mosbi {
     container "dockergenevention/mosbi" // use docker conatainer
-    memory "8 GB"
     publishDir params.output, mode: "copy"
 
     input:

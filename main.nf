@@ -67,8 +67,7 @@ process mosbi {
     path protein_mapping
 
     output:
-    path "community*"
-    path "Rplots.pdf"
+    path "*"
 
     """
     Rscript $script_file ./ $count_file $meta_file ${params.algorithm} ${params.min_size} $protein_mapping ${params.timepoint}

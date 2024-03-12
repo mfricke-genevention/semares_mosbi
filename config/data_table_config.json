@@ -1,7 +1,7 @@
 {
     "output": {
         "file_name": "data.tsv",
-        "sep": "\t",
+        "sep": ",",
         "quotechar": "",
         "path": "./output/"
     },

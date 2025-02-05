@@ -1,6 +1,7 @@
 pipelines:
 - pipelineName: mosbi analysis repository
   pipelineDescription: "Biclustering algorithms on omics data in combination with a novel ensemble approach to find molecular signatures in the data. This can yield to new insights of the data, which go further than traditional clustering, where only one dimension is considered."
+  pipelinePath: $PIPELINE_PATH/main.nf
   pipelineCommand: nextflow run
   pipelineVersion: "1.1.0"
 
